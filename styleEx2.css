@@ -1,0 +1,28 @@
+.wrapper .my-button {
+    color: blue;
+  }
+  
+  
+  #my-button {
+    color: chocolate;
+  }
+  
+  
+  .my-button {
+    color: red
+  }
+  
+  
+  #my-button.my-button[type="button"] {
+    color: green;
+  }
+  
+  
+  .wrapper #my-button {
+    color: cadetblue;
+  }
+  
+  
+  .wrapper #my-button[type="button"] {
+    color: black
+  }
