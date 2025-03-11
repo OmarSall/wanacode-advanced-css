@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleEx2.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleEx2.css" />
     <title>What is the color?</title>
-</head>
-<body>
-</body>
+  </head>
+  <body>
+    <div class="wrapper">
+      <button id="my-button" class="my-button" type="button">Click me!</button>
+    </div>
+    <p>
+      The highest specificity here is the .wrapper
+      #my-button[type="button"] { color: black; }, which applies the color
+      black. This rule will override all previous color styles, as it has the
+      highest specificity and matches the button's conditions.
+    </p>
+  </body>
 </html>
