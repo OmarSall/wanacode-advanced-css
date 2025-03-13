@@ -1,29 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Specificity Table</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 18px;
-            text-align: left;
-        }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+      }
 
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-        }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+      }
 
-        th {
-            background-color: #f4f4f4;
-        }
+      th {
+        background-color: #f4f4f4;
+      }
     </style>
-</head>
-<body>
-
-</body>
+  </head>
+  <body>
+    <h2>CSS Specificity Table</h2>
+    <table>
+      <tr>
+        <th>Selector</th>
+        <th>Inline</th>
+        <th>ID</th>
+        <th>Classes/Attributes/Pseudo-classes</th>
+        <th>Elements/Pseudo-elements</th>
+        <th>Specificity Score</th>
+      </tr>
+      <tr>
+        <td>&lt;button style="color: red;"&gt; (Inline Style)</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1,0,0,0</td>
+      </tr>
+      <tr>
+        <td>div#button-wrapper .submit-button[type="submit"]</td>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        <td>0,1,2,1</td>
+      </tr>
+      <tr>
+        <td>#button-wrapper .submit-button:hover</td>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0,1,2,0</td>
+      </tr>
+      <tr>
+        <td>#button-wrapper .submit-button</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0,1,1,0</td>
+      </tr>
+      <tr>
+        <td>#submit-button</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0,1,0,0</td>
+      </tr>
+      <tr>
+        <td>#submit-button (repeated)</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0,1,0,0</td>
+      </tr>
+      <tr>
+        <td>.submit-button.submit-button.submit-button</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3</td>
+        <td>0</td>
+        <td>0,0,3,0</td>
+      </tr>
+      <tr>
+        <td>.submit-button</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0,0,1,0</td>
+      </tr>
+      <tr>
+        <td>button</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0,0,0,1</td>
+      </tr>
+      <tr>
+        <td>* (Universal Selector)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0,0,0,0</td>
+      </tr>
+    </table>
+  </body>
 </html>
