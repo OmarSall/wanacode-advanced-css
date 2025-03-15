@@ -9,24 +9,32 @@
   <body>
     <div class="ticket">
         <div class="ticket-content">
-            <h2>Cinema</h2>
-            <h2>Ticket</h2>
-            <p class="time">8:00 PM</p>
-            <p>GATE: 03 &nbsp; SEAT: B43</p>
-            <p>TICKET NO: 103752</p>
+            <div class="ticket-header">
+                <h2>CINEMA</h2>
+                <h2>TICKET</h2>
+            </div>
             <div class="vip">
                 <p>VIP</p>
                 <p>$10</p>
             </div>
-            <div class="barcode"></div>
+            <div class="ticket-details">
+                <p class="time">8:00 PM</p>
+                <p class="gate-seat">GATE: 03 &nbsp; &nbsp; &nbsp; &nbsp; SEAT: B43</p>
+                <p class="ticket-no">TICKET NO: 103752</p>
+            </div>
+            <div class="barcode">
+                <img src="barcode.svg" alt="barcode">
+            </div>
         </div>
         <div class="ticket-separator"></div>
         <div class="ticket-image">
             <div class="popcorn-container">
-                <img src ="box.png" alt="Popcorn" class="popcorn-box">
-                <img src ="popcorn.svg" alt="Popcorn" class="popcorn1">
-                <img src ="popcorn.svg" alt="Popcorn" class="popcorn2">
-                <img src ="popcorn.svg" alt="Popcorn" class="popcorn3">
+                <img src ="box.svg" alt="Popcorn" class="popcorn-box">
+                <div class="popcorn">
+                    <img src ="popcorn.svg" alt="Popcorn" class="small-popcorn1">
+                    <img src ="popcorn.svg" alt="Popcorn" class="small-popcorn2">
+                    <img src ="popcorn.svg" alt="Popcorn" class="small-popcorn3">
+                </div>
             </div>
         </div>
     </div>
