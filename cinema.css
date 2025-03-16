@@ -13,8 +13,8 @@ body {
   display: flex;
   background-color: #f2c777;
   border-radius: 8px;
-  width: 762px;
-  height: 253px;
+  width: 742px;
+  height: 233px;
   padding: 20px;
 }
 
@@ -36,23 +36,27 @@ h2 {
 
 .vip {
   display: flex;
-  gap: 40px;
-  width: 80px;
-  padding: 5px;
-  margin-top: 30px;
+  position: relative;
+  gap: 30px;
+  width: 82px;
+  height: 44px;
+  padding: 0px;
+  margin-left: 7px;
+  top: 42px;
 }
 
 .vip p {
-  border: 2px solid black;
+  border: 1px solid black;
   font-size: 20px;
   font-weight: 400;
-  padding: 10px 25.5px;
+  margin: 0;
+  padding: 11px 25px;
 }
 
 .ticket-details {
   position: relative;
-  bottom: 285px;
-  left: 250px;
+  top: -187px;
+  left: 269px;
   width: 218px;
   height: 128px;
 }
@@ -63,10 +67,11 @@ h2 {
   width: 218px;
   font-size: 20px;
   font-weight: 400;
-  margin: 10px 10px;
+  margin: 0;
   line-height: 1.2;
   padding-bottom: 0px;
-  padding-top: 20px;
+  padding-top: 0px;
+  margin-top: 25px;
 }
 
 .barcode {
@@ -74,20 +79,10 @@ h2 {
   width: 217px;
   height: 62px;
   margin-top: 10px;
-  bottom: 285px;
-  left: 250px;
-  margin: 10px 10px;
-  padding-top: 70px;
-}
-
-.ticket-separator {
-  position: relative;
-  width: 1px;
-  border-left: 2px dashed rgb(255, 0, 0);
-  height: 100%;
+  bottom: 220px;
+  left: 269px;
   margin: 0;
-  padding: 20px 0;
-  top: -20px;
+  padding-top: 70px;
 }
 
 .ticket-image {
@@ -97,6 +92,9 @@ h2 {
   justify-content: center;
   padding-left: 40px;
   padding-right: 20px;
+  border-left: 2px dashed red;
+  margin-top: -20px;
+  margin-bottom: -20px;
 }
 
 .popcorn-container {
