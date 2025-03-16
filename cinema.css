@@ -97,10 +97,6 @@ h2 {
   margin-bottom: -20px;
 }
 
-.popcorn-container {
-  position: relative;
-}
-
 .popcorn-box {
   width: 136.26px;
   height: 194.47px;
@@ -108,7 +104,7 @@ h2 {
   transition: transform 0.5s ease-in-out;
 }
 
-.popcorn-container:hover .popcorn-box {
+.ticket-image:hover .popcorn-box {
   transform: translateY(-5px) rotate(-5deg);
 }
 
@@ -121,23 +117,23 @@ h2 {
 
 .small-popcorn1 {
   position: absolute;
-  left: 0px;
-  top: -200px;
+  left: -60px;
+  top: -100px;
 }
 
 .small-popcorn2 {
   position: absolute;
-  left: 40px;
-  top: -220px;
+  left: -20px;
+  top: -115px;
 }
 
 .small-popcorn3 {
   position: absolute;
-  left: 90px;
-  top: -205px;
+  left: 30px;
+  top: -110px;
 }
 
-.popcorn-container:hover .popcorn {
+.ticket-image:hover .popcorn {
   opacity: 1;
   transform: translateY(-15px);
 }
