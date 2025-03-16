@@ -85,7 +85,7 @@ h2 {
   width: 1px;
   border-left: 2px dashed rgb(255, 0, 0);
   height: 100%;
-  margin-right: 40px;
+  margin: 0;
   padding: 20px 0;
   top: -20px;
 }
@@ -95,6 +95,8 @@ h2 {
   flex-shrink: 1;
   align-items: center;
   justify-content: center;
+  padding-left: 40px;
+  padding-right: 20px;
 }
 
 .popcorn-container {
@@ -104,11 +106,12 @@ h2 {
 .popcorn-box {
   width: 136.26px;
   height: 194.47px;
+  rotate: 1.62deg;
   transition: transform 0.5s ease-in-out;
 }
 
 .popcorn-container:hover .popcorn-box {
-  transform: translateY(-10px) rotate(-5deg);
+  transform: translateY(-5px) rotate(-5deg);
 }
 
 .popcorn {
@@ -121,19 +124,19 @@ h2 {
 .small-popcorn1 {
   position: absolute;
   left: 0px;
-  top: -210px;
+  top: -200px;
 }
 
 .small-popcorn2 {
   position: absolute;
   left: 40px;
-  top: -240px;
+  top: -220px;
 }
 
 .small-popcorn3 {
   position: absolute;
   left: 90px;
-  top: -215px;
+  top: -205px;
 }
 
 .popcorn-container:hover .popcorn {
